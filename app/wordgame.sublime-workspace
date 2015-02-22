@@ -1,0 +1,308 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"maz",
+				"maze_size"
+			],
+			[
+				"number",
+				"number_of_test_cases"
+			],
+			[
+				"inside",
+				"insideStoreId"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <title>Wordgame</title>\n    <link rel=\"stylesheet\" href=\"css/normalize.css\">\n    <link rel=\"stylesheet\" href=\"css/style.css\">\n    <link rel=\"stylesheet\" href=\"css/app.css\">\n    <link rel=\"stylesheet\" href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css\">\n</head>\n\n<body>\n<div class=\"bg\"></div>\n<header class=\"navigation\" role=\"banner\">\n    <div class=\"navigation-wrapper\">\n        <a href=\"javascript:void(0)\" class=\"logo\">\n            <img src=\"https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png\" alt=\"Logo Image\">\n        </a>\n        <nav role=\"navigation\">\n        </nav>\n    </div>\n</header>\n\n<section>\n    <div>\n        <h1>Your Word Is</h1>\n        <h2>Galvanize</h2>\n        <div class=\"cards\">\n            <div class=\"card\">\n                <div class=\"flipper\">\n                    <div class=\"front\">\n                        <div class=\"card-image\">\n                            <img src=\"https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png\" alt=\"\">\n                        </div>\n                        <div class=\"card-copy\">\n                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>\n                        </div>\n                    </div>\n                    <div class=\"back\">\n                        <div class=\"card-image\">\n                            CORRECT\n                        </div>\n                        <div class=\"card-copy\">\n                            <p>BACK</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card\">\n                <div class=\"flipper\">\n                    <div class=\"front\">\n                        <div class=\"card-image\">\n                            <img src=\"https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png\" alt=\"\">\n                        </div>\n                        <div class=\"card-copy\">\n                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>\n                        </div>\n                    </div>\n                    <div class=\"back\">\n                        <div class=\"card-image\">\n                            CORRECT\n                        </div>\n                        <div class=\"card-copy\">\n                            <p>BACK</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card\">\n                <div class=\"flipper\">\n                    <div class=\"front\">\n                        <div class=\"card-image\">\n                            <img src=\"https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png\" alt=\"\">\n                        </div>\n                        <div class=\"card-copy\">\n                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, officiis sunt neque facilis culpa molestiae necessitatibus delectus veniam provident.</p>\n                        </div>\n                    </div>\n                    <div class=\"back\">\n                        <div class=\"card-image\">\n                            CORRECT\n                        </div>\n                        <div class=\"card-copy\">\n                            <p>BACK</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <h3>Choose the correct definition</h3>\n    </div>\n</section>\n\n<script src=\"js/libs/jquery-1.10.2.js\"></script>\n<script src=\"js/libs/handlebars-v2.0.0.js\"></script>\n<script src=\"js/libs/ember-1.9.1.js\"></script>\n<script src=\"js/app.js\"></script>\n<!-- to activate the test runner, add the \"?test\" query string parameter -->\n<script src=\"tests/runner.js\"></script>\n<script>\n    $(document).ready(function() {\n        $('.flipper').on('click', function() {\n            $(this).toggleClass('flipped');\n        })\n    })\n</script>\n</body>\n</html>\n\n",
+			"file": "/Users/chris/Workspace/wordgame/index.html",
+			"file_size": 4272,
+			"file_write_time": 1423575371000000,
+			"settings":
+			{
+				"buffer_size": 4272,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/chris/Workspace/wordgame/Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 3252,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 95,
+				"line_ending": "Unix",
+				"name": "app/index.php"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 97.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 457.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/chris/Workspace/wordgame/app/wordgame.sublime-project",
+		"/Users/chris/Workspace/wordgame/js/app.js",
+		"/Users/chris/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/chris/Workspace/wordgame/index.html",
+		"/Users/chris/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/chris/Workspace/HipKata/vendor/symfony/translation/Symfony/Component/Translation/Loader/PoFileLoader.php"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n  ",
+			"\n}",
+			"0"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/chris/Workspace/wordgame/index.html",
+					"settings":
+					{
+						"buffer_size": 4272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/chris/Workspace/wordgame/Gruntfile.js",
+					"settings":
+					{
+						"buffer_size": 3252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2497,
+								2497
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 95,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								95,
+								95
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"card",
+				"styles/_card.scss"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"app.sc",
+				"styles/app.scss"
+			],
+			[
+				"app.scs",
+				"styles/app.scss"
+			],
+			[
+				"app.js",
+				"js/app.js"
+			],
+			[
+				"index.html",
+				"index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true
+}

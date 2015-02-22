@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wordgame</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="bg"></div>
+<header class="navigation" role="banner">
+    <div class="navigation-wrapper">
+        <a href="javascript:void(0)" class="logo">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+        </a>
+        <nav role="navigation">
+        </nav>
+    </div>
+</header>
+
+<section>
+    <div>
+        <h1>Your Word Is</h1>
+
+        <h2 data-chosen-word>Loading your word...</h2>
+
+        <div class="cards">
+            <div class="card">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="card-image">
+                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                        </div>
+                        <div class="card-copy">
+                            <p data-definition-1>Loading the first definition...</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-image">
+                            <p data-word-correct-1></p>
+                        </div>
+                        <div class="card-copy">
+                            <p data-word-text-1></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="card-image">
+                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                        </div>
+                        <div class="card-copy">
+                            <p data-definition-2>Loading the second definition...</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-image">
+                            <p data-word-correct-2></p>
+                        </div>
+                        <div class="card-copy">
+                            <p data-word-text-2></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="card-image">
+                            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png" alt="">
+                        </div>
+                        <div class="card-copy">
+                            <p data-definition-3>Loading the third definition...</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card-image">
+                            <p data-word-correct-3></p>
+                        </div>
+                        <div class="card-copy">
+                            <p data-word-text-3></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/libs/jquery-1.10.2.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.flipper').on('click', function () {
+            $(this).toggleClass('flipped');
+            setTimeout(function () {
+                $('.flipper').each(function () {
+                    var $flipper = $(this);
+                    if (false == $flipper.hasClass('flipped')) {
+                        $flipper.toggleClass('flipped');
+                    }
+                })
+
+                setTimeout(function () {
+                    $('.flipper').toggleClass('flipped');
+                    refreshBoard();
+                }, 1500)
+            }, 1000);
+        })
+
+        function refreshBoard() {
+            $.getJSON('/workspace/wordgame/app/word/random', function (response) {
+
+                var words = response.result;
+                $.each(words, function (i, word) {
+                    ++i;
+                    var $chosenWordPara = $('[data-chosen-word]');
+                    var $wordCorrectPara = $('[data-word-correct-' + i + ']');
+                    var $definitionPara = $('[data-definition-' + i + ']');
+                    var $wordTextPara = $('[data-word-text-' + i + ']');
+
+                    if (word.isChosen) {
+                        $chosenWordPara.text(word.text);
+                        $wordCorrectPara.text('Correct!');
+                    } else {
+                        $wordCorrectPara.text('Incorrect!');
+                    }
+
+                    $definitionPara.text(word.definition);
+                    $wordTextPara.text(word.text);
+                })
+            })
+        }
+
+        refreshBoard();
+    })
+</script>
+</body>
+</html>
+
